@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container-to-do{
+    text-align: center;
+    max-width: 600px;
+    height: auto;
+    padding: 0 30px 20px;
+    margin: 20px auto 0;
+    background-color: #D8D2CB;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input{
+    height: 46px;
+    width: 70%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: #FDEFF4;
+    padding: 10px 0 10px 20px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+
+}
+
+#add-btn{
+    height: 46px;
+    width: 70px;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    background-color: #1c91ff;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    border: 0;
+    transition: 0.6s ease;
+}
+
+#add-btn:hover{
+    background-color: #1C658C;
+    color: #F0FFC2;
+}
+
+.to-do{
+    max-width: 600px;
+    margin: 10px auto 0;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 58, 19);
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    font-size: 1.8rem;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    font-weight: 300;
+    background-color: #dad6c8;
+}
+p:hover{
+    background-color: #E9E5D6;
+}
+
+.btn-edit{
+    font-size: .9rem;
+    padding: 8px 16px;
+    vertical-align: middle;
+    background-color: #16b396;
+    color: #FFF1CE;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    border: 0;
+    transition: 0.2s ease;
+    position: absolute;
+    right: 100px;
+}
+.btn-edit:hover{
+    background-color: #04a285;
+}
+
+
+.btn-delete{
+    font-size: .9rem;
+    padding: 8px 16px;
+    vertical-align: middle;
+    background-color: #FC4F4F;
+    color: #FFF1CE;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    border: 0;
+    transition: 0.2s ease;
+    position: absolute;
+    right: 10px;
+}
+.btn-delete:hover{
+    background-color: #aa3737;
+}
+
+@media screen and (max-width: 440px) {
+    .container-to-do{
+        text-align: center;
+        border: 1px solid black;
+        max-width: 600px;
+        height: auto;
+        padding: 20px 30px;
+        margin: 0 auto;
+        background-color: #D8D2CB;
+    }
+    #add-btn{
+        height: 40px;
+        width: 60px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        background-color: #1c91ff;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+        border: 0;
+        transition: 0.6s ease;
+    }
+    .input{
+        height: 40px;
+        width: 70%;
+        font-size: 1rem;
+        vertical-align: middle;
+        border-radius: 4px;
+        border: 1px solid black;
+        background-color: #FDEFF4;
+        padding: 3px 6px;
+    }
+    .btn-edit{
+        font-size: .5rem;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        background-color: #16b396;
+        color: #FFF1CE;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+        border: 0;
+        transition: 0.2s ease;
+        position: absolute;
+        right: 80px;
+    }
+    .btn-delete{
+        font-size: .5rem;
+        letter-spacing: 2px;
+        vertical-align: middle;
+        background-color: #FC4F4F;
+        color: #FFF1CE;
+        cursor: pointer;
+        border-radius: 4px;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+        border: 0;
+        transition: 0.2s ease;
+        position: absolute;
+        right: 10px;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding: 10px 0 10px 10px;
+        font-size: 1rem;
+        margin: 0;
+        background-color: #E9E5D6;
+    }
+    p:hover{
+        background-color: #E9E5D6;
+    }
+}

@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #495371;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    max-width: 650px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    color: rgb(186, 186, 186);
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    border-radius: 50px;
+    letter-spacing: 1.3px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    transition: color 0.2s ease-in;
+}
+
+.input-form .input-field:hover {
+    box-shadow: 0 0 30px rgba(253, 253, 253, 0.597);
+}
+
+.input-field::placeholder {
+    letter-spacing: 0;
+}
+
+.submit-field {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: auto;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 0;
+    height: 75px;
+    width: 75px;
+    box-shadow: 0 15px 30px rgba(140, 242, 255, 0.2);
+    background-color: rgb(93, 250, 255);
+    border-radius: 50%;
+    transition: 0.2s;
+    margin: 0.3rem;
+    position: relative;
+
+}
+
+.submit-field:active {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.597);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.submit-field:hover {
+    box-shadow: 0 0 30px rgba(64, 198, 202, 0.981);
+    color: #fff;
+}
+.input-field:focus {
+    box-shadow: 0 0 30px rgba(158, 158, 158, 0.597);
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    background-color: #21243D;
+}
+
+.delete-field {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: auto;
+    font-size: 1.4rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #FC4F4F;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: 0.2s;
+    height: 75px;
+    position: relative;
+    width: 75px;
+}
+
+.delete-field:hover {
+    color: #fff;
+    box-shadow: 0 0 30px rgb(255, 77, 77);
+}
+
+.delete-field:active {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.597);
+    color: rgb(255, 51, 51);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+}
+
+.tasks {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #21243D;
+    border-radius: 1rem;
+    align-items: center;
+    transition: 0.2s ease;
+    margin: .2rem;
+}
+
+.tasks:hover {
+    background-color: #171c3f;
+    transform: scale(1.03);
+}
+
+.task-list-name {
+    outline: none;
+    border: 0;
+    padding: 1rem;
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    width: 400px;
+    pointer-events: none;
+    background-color: #d1d1d1;
+}
+
+@media screen and (max-width: 380px) {
+    .task-list-name {
+        width: 200px;
+    }
+
+    .input-field {
+        width: 250px;
+    }
+
+    .submit-field {
+        margin: 0;
+        position: absolute;
+        top: 48%;
+        left: 25%;
+        width: 80px;
+        height: 50px;
+        font-size: 1.5rem;
+        vertical-align: middle;
+        line-height: 0;
+        border-radius: 50px;
+    }
+
+    .delete-field {
+        margin: 0;
+        position: absolute;
+        top: 48%;
+        right: 25%;
+        width: 80px;
+        height: 50px;
+        font-size: 1.2rem;
+        vertical-align: middle;
+        line-height: 0;
+        border-radius: 50px;
+    }
+
+    main {
+        margin-top: 70px;
+    }
+}
+
+.btn-done {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #8BDB81;
+    text-transform: uppercase;
+    transition: 0.1s;
+    margin: .2rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-done:hover {
+    background-color: #2EB086;
+    color: rgb(255, 255, 255);
+}
+
+.btn-done:active {
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #95d9fd;
+    text-transform: uppercase;
+    transition: 0.1s;
+    margin: .2rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-edit:hover {
+    background-color: #41bdff;
+    color: rgb(255, 255, 255);
+}
+
+.btn-edit:active {
+    transform: scale(1.05);
+}
+
+.btn-save {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #54BAB9;
+    text-transform: uppercase;
+    transition: 0.1s;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: none;
+    margin: .2rem;
+}
+
+.btn-save:hover {
+    background-color: #41bdff;
+    color: rgb(255, 255, 255);
+}
+
+.btn-save:active {
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #EF6D6D;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    margin: .2rem;
+    transition: 0.1s;
+}
+
+.btn-delete:hover {
+    background-color: #FC4F4F;
+    color: #fff;
+}
+
+.btn-delete:active {
+    transform: scale(1.05);
+}
+
+.btn {
+    margin: 0.1rem;
+}
+
+.btn-check {
+    font-size: 1.25rem;
+    color: green;
+}
+
+.done-class {
+    background-color: #2EB086;
+    color: aliceblue;
+    font-weight: bold;
+    transition: color 0.6s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.edit-class {
+    background-color: #54BAB9;
+    color: #ffffff;
+    transition: color 0.6s ease-in-out;
+    pointer-events: auto;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.no-cursor {
+    pointer-events: none;
+}
+
+.gray-color {
+    background-color: #D1D1D1;
+}
+
+.clear-task {
+    display: none;
+}
+
+#date {
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(175, 175, 175);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    pointer-events: none;
+}
